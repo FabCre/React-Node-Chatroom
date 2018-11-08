@@ -1,0 +1,44 @@
+@import src/styles/vars
+
+#settings
+  position: absolute
+  top: 1.2rem
+  right: 0
+  display: flex
+  align-items: center
+  transform: translateX(15rem)
+  transition: 1s
+
+  &-form
+    width: 15rem
+
+  &-submit
+    text-transform: uppercase
+    font-weight: 700
+  &-submit,
+  &-input
+    padding: .8em
+    border: 0
+    border-bottom: 1px solid $border-color
+    color: white
+    background: transparent
+
+  &-toggle
+    &::before
+      content: 'Mon Pseudo'
+      font-size: .8em
+      display: block
+      font-weight: 500
+      cursor: pointer
+      margin-right: .3em
+      transition: transform 1s
+      transform: rotate(0deg)
+      color: white
+  
+  &.settings--open 
+    transform: translateX(0)
+
+  &.settings--open &-toggle
+      &::before
+        color: $form-color
+        transform: rotate(90deg)
