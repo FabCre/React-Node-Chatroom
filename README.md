@@ -11,7 +11,7 @@ This is a *chatroom* code in NodeJS + React + Redux.
 
 * You can send a message to all connected browsers.
 
-* Tou can change your name.
+* You can change your name.
 
 Here is the application, launched in two different tabs put side by side:
 
